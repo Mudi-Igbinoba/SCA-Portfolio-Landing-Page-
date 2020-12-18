@@ -1,0 +1,14 @@
+* {
+  font-family: 'Raleway', sans-serif;
+  list-style-type: none;
+}
+
+img {
+  width: 50%;
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-family: 'Dancing Script', cursive;
+}
