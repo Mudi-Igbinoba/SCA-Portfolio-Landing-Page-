@@ -12,12 +12,14 @@
   <title>Eve's Foods</title>
 </head>
 <body>
-  <header>
+  <header id="header">
     <h1>Eve's Foods<!--add logo--></h1> 
 
-    <nav class="navbar">
+    <nav id="navbar" class="navbar">
+      
       <li><a href="#home">Home</a></li>
       <div class="dropdown">
+                
         <li>
           <a href="#about" class="droplink">About
             <i class="fa fa-caret-down"></i>
@@ -29,100 +31,130 @@
           <li><a href="#testimonials">Testimonials</a></li>
         </div>
       </div>
+    
       <li><a href="#">Menu</a></li>
       <li><a href="#contact">Contact Us</a></li>
     </nav>
   </header>
-  <br>
+    
+
   <section id="home">
-    <div>
-      <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
-      <h2>On-Demand Foodstuffs</h2>
-      <p>Eve's Foods focuses on providing well-packaged and delicious raw and home-made local and international foods as well as baked goods for your every need of and at super cheap rates.</p>
+    
+    <div class="slider">
+      <div class="slide" id="slide-1">
+        <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+        <h2>On-Demand Foodstuffs</h2>
+        <p>Eve's Foods focuses on providing well-packaged and delicious raw and home-made local and international foods as well as baked goods for your every need of and at super cheap rates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quae eos omnis nemo doloremque quia veritatis possimus reprehenderit totam!</p>
+      </div>
+      <div class="slide" id="slide-2">
+        <i class="fa fa-car fa-2x" aria-hidden="true"></i>
+        <h2>Swift Delivery Services</h2>
+        <p>We pride ourselves on delivering our products within 24 hours right at your doorsteps. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim perspiciatis nostrum doloribus omnis voluptates pariatur. Nam et reprehenderit neque expedita obcaecati, quis quaerat odio? Adipisci totam delectus nulla illum excepturi.</p>
+      </div>
+      <div class="slide" id="slide-3">
+        <i class="fa fa-users fa-2x" aria-hidden="true"></i>
+        <h2>Reliable Customer Services</h2>
+        <p>Our hotline is always open, within our working hours, to file any complaint you might have. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores minima, modi iste distinctio et molestias asperiores voluptatibus dolorem neque provident ipsum, iusto officiis deserunt quisquam? Tempora at rerum ducimus vitae.</p>
+      </div>
     </div>
-    <div>
-      <i class="fa fa-car fa-2x" aria-hidden="true"></i>
-      <h2>Swift Delivery Services</h2>
-      <p>We pride ourselves on delivering our products within 24 hours right at your doorsteps.</p>
-    </div>
-    <div>
-      <i class="fa fa-users fa-2x" aria-hidden="true"></i>
-      <h2>Reliable Customer Services</h2>
-      <p>Our hotline is always open, within our working hours, to file any complaint you might have.</p>
+
+    <div class="counter">  
+      <a href="#slide-1" > </a>
+      <a href="#slide-2" > </a>
+      <a href="#slide-3" > </a>
     </div>
   </section>
-
+     
   <section id="about">
     <section id="offerings">
       <h2>Offerings</h2>
-      <figure>
-        <img src="assets/images/raw-foods.jpg" alt="A bunch of fresh, raw vegetables.">
-        <figcaption>Raw Foods</figcaption>
-      </figure>
-      <figure>
-        <img src="assets/images/baked-goods.jpg" alt="A host of golden brown delicious pastries.">
-        <figcaption>Baked Goods</figcaption>
-      </figure>
-      <figure>
-        <img src="assets/images/homemade-meals.jpg" alt="A deep dish of garnished jollof rice.">
-        <figcaption>Traditional Nigerian Meals</figcaption>
-      </figure>
-      <figure>
-        <img src="assets/images/sizzling-grills.jpeg" alt="A plate of grilled chicken.">
-        <figcaption>Sizzling Grills</figcaption>
-      </figure>
-      <figure>
-        <img src="assets/images/sharwarma.png" alt="A plate of chicken sharwarma.">
-        <figcaption>And Much More </figcaption>
-      </figure>
+      <div class="offerings-flex">
+        <figure>
+          <img src="assets/images/raw-foods.jpg" alt="A bunch of fresh, raw vegetables.">
+          <figcaption>Raw Foods</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/images/baked-goods.jpg" alt="A host of golden brown delicious pastries.">
+          <figcaption>Baked Goods</figcaption>
+        </figure>
+        <figure>
+          <img class="jollof" src="assets/images/homemade-meals.jpg" alt="A deep dish of garnished jollof rice.">
+          <figcaption>Traditional Nigerian Meals</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/images/sizzling-grills.jpeg" alt="A plate of grilled chicken.">
+          <figcaption>Sizzling Grills</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/images/sharwarma.png" alt="A plate of chicken sharwarma.">
+          <figcaption>And Much More </figcaption>
+        </figure>
+      </div>
     </section>
     <section id="application">
       <h2>Download our application</h2>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora quasi accusantium odit magnam delectus rem hic voluptatibus error? Consequuntur, dignissimos inventore? Numquam eligendi laborum nihil? Perspiciatis ullam ipsa amet esse!</p>
-      <a href="#">play store</a>
-      <a href="#">app store</a>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora quasi accusantium odit magnam delectus rem hic voluptatibus error? Consequuntur, dignissimos inventore? Numquam eligendi laborum nihil? Perspiciatis ullam ipsa amet esse! You can access our mobile app from the links below.</p>
+      <div class="app-links">
+        <a href="#" class="app-link1">play store</a>
+        <a href="#" class="app-link2">app store</a>
+      </div>
     </section>
     <section id="testimonials">
       <h2>Testimonials</h2>
-      <div>
-        <figure>
-          <img src="assets/images/pepper.jpg" alt="A plate of pepper stew">
-          <blockquote><q>Eve's Foods are simple exquisite. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ipsa, eius exercitationem iure quo assumenda sit, ipsum vel mollitia molestiae, architecto doloremque voluptatum neque blanditiis voluptatem quaerat at inventore iusto!</q></blockquote>
-          <figcaption><cite>Morenike Coker</cite></figcaption>
-        </figure>
+
+      <div class="test-counter">  
+        <a href="#coker" > </a>
+        <a href="#achuba" > </a>
+        <a href="#hassan" > </a>
+        <a href="#guobadia" > </a>
       </div>
-      <div>
-        <figure>
-          <img src="assets/images/nsala-plate-1.jpg" alt="A plate of Ofe Nsala">
-          <blockquote><q>I have been a constant customer since day one and i have never regretted it. Nulla minus beatae similique aliquam asperiores sunt excepturi ab nesciunt eligendi error deleniti optio quo molestias, temporibus aliquid?</q></blockquote>
-          <figcaption><cite>Chibuzor Achuba</cite></figcaption>
-        </figure>
+
+      <div class="test-slider">
+        <div class="test-slide" id="coker">
+          <figure>
+            <img src="assets/images/pepper.jpg" alt="A plate of pepper stew">
+            <blockquote><q>Eve's Foods are simple exquisite. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ipsa, eius exercitationem iure quo assumenda sit, ipsum vel mollitia molestiae, architecto doloremque voluptatum neque blanditiis voluptatem quaerat at inventore iusto!</q></blockquote>
+            <figcaption><cite>Morenike Coker</cite></figcaption>
+          </figure>
+        </div>
+        <div class="test-slide" id="achuba">
+          <figure>
+            <img src="assets/images/nsala-plate-1.jpg" alt="A plate of Ofe Nsala">
+            <blockquote><q>I have been a constant customer since day one and i have never regretted it. Nulla minus beatae similique aliquam asperiores sunt excepturi ab nesciunt eligendi error deleniti optio quo molestias, temporibus aliquid?</q></blockquote>
+            <figcaption><cite>Chibuzor Achuba</cite></figcaption>
+          </figure>
+        </div>
+        <div class="test-slide" id="hassan">
+          <figure>
+            <img src="assets/images/tuwo.jpg" alt="A plate of tuwo shinkafa">
+            <blockquote><q>Their pastries are so delicious not to talk of their amazing delivery and customer services. Lorem ipsum dolor sit amet consectetur adipisicing elit.</q></blockquote>
+            <figcaption><cite>Khadijah Hassan</cite></figcaption>
+          </figure>
+        </div>
+        <div class="test-slide" id="guobadia">
+          <figure>
+            <img src="assets/images/fried-rice.jpg" alt="A plate of fried rice">
+            <blockquote><q>This was my first time ever ordering fresh foodstuffs online, I was extremely surprised by the freshness of the produce.</q></blockquote>
+            <figcaption><cite>Osaze Guobadia</cite></figcaption>
+          </figure>
+        </div>
       </div>
-      <div>
-        <figure>
-          <img src="assets/images/tuwo.jpg" alt="A plate of tuwo shinkafa">
-          <blockquote><q>Their pastries are so delicious not to talk of their amazing delivery and customer services. Lorem ipsum dolor sit amet consectetur adipisicing elit.</q></blockquote>
-          <figcaption><cite>Khadijah Hassan</cite></figcaption>
-        </figure>
-      </div>
-      <div>
-        <figure>
-          <img src="assets/images/fried-rice.jpg" alt="A plate of fried rice">
-          <blockquote><q>This was my first time ever ordering fresh foodstuffs online, I was extremely surprised by the freshness of the produce.</q></blockquote>
-          <figcaption><cite>Osaze Guobadia</cite></figcaption>
-        </figure>
-      </div>
+
+      
     </section>
   </section>
   <section id="contact">
     <h2>Contact Us</h2>
-    <p>To find out more about our our payments, delivery process, and whatever question you may have; reach out to us through our contact info below:</p>
-    <p><i class="fa fa-map-marker" aria-hidden="true"></i>  10, Agbanye Street, Unity Plaza, Lekki-Phase 1, Lekki, Lagos State. Nigeria.</p>
-    <p><i class="fa fa-envelope" aria-hidden="true"></i>  <a href="mailto:eves-foods@tastyfood.com">eves-foods@tastyfood.com</a></p>
-    <p><i class="fa fa-phone" aria-hidden="true"></i>  <a href="tel:+234815327829">+234815327829</a></p>
-    <a href="#">  <i class="fa fa-facebook-square fa-2x"></i></a>
-    <a href="#">  <i class="fa fa-twitter-square fa-2x"></i></a>
-    <a href="#">  <i class="fa fa-instagram fa-2x"></i></a>
+    <p class="contact-paragraph">To find out more about our our payments, delivery process, and whatever question you may have; reach out to us through our contact info below:</p>
+    <p class="address"><i class="fa fa-map-marker" aria-hidden="true"></i>   <span> 10, Agbanye Street, Unity Plaza, Lekki-Phase 1, Lekki, Lagos State. Nigeria.</span></p>
+    <p class="email"><i class="fa fa-envelope" aria-hidden="true"></i>  <span><a href="mailto:eves-foods@tastyfood.com"> eves-foods@tastyfood.com</a></span></p>
+    <p class="phone-number"><i class="fa fa-phone" aria-hidden="true"></i><span>  <a href="tel:+234815327829">+234815327829</a></span></p>
+    <span class="social-span">
+      <a href="#" class="social-fb">  <i class="fa fa-facebook-square fa-2x"></i></a>
+      <a href="#" class="social-tweet">  <i class="fa fa-twitter-square fa-2x"></i></a>
+      <a href="#" class="social-insta">  <i class="fa fa-instagram fa-2x"></i></a>
+    </span>
+    <br>
   </section>
 </body>
 </html>

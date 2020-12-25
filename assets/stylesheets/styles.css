@@ -1,41 +1,80 @@
 * {
   font-family: 'Raleway', sans-serif;
-  list-style-type: none;
 }
 
+html, body {
+  height: 100%;
+}
+
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
 img {
   width: 50%;
   max-width: 100%;
   height: auto;
 }
 
+body {
+  background-color: white;
+}
+
+h2 {
+  font-size: 30px;
+}
 /* Header */
 h1 {
+  position: relative;
   font-family: 'Dancing Script', cursive;
+  font-size: 45px;
+  color: white;
+  padding: 10px;
+  margin: 30.15px 0px 30.15px 10px;
+  background: #DA4453;
+  bottom: 25px;
+}
+
+#header {
+  position: relative;
+  height: 130px;
+  width: 1265px;
+  bottom: 10px;
+  right: 10px;
+  background: #89216B;
+  background: -webkit-linear-gradient(to right, #89216B, #DA4453);
+  background: linear-gradient(to right, #89216B, #DA4453);
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Navbar */
 .navbar {
+  flex-shrink: 1;
+  align-self: flex-end;
+  margin-bottom: 40px;
   overflow: hidden;
-  background-color: #333;
+  padding: 20px 0 20px 0;
 }
 
 .navbar a {
-  float: left;
   font-size: 16px;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 25px 16px;
   text-decoration: none;
 }
 
 .dropdown {
   float: left;
   overflow: hidden;
+  padding: 0 0 25px 0;
 } 
 
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+.navbar a:hover, .dropdown:hover .droplink:hover {
+  background-color: #89216B;
 }
 
 .dropdown-content {
@@ -57,9 +96,707 @@ h1 {
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: #89216B;
+  color: #DA4453;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+/* Home */
+
+#home {
+  position: relative;
+  background: #DA4453;
+  padding: 20px 10px;
+  width: 1243px;
+  height: 427px;
+  right: 8px;
+  bottom: 10px;
+}
+
+#home h2, #home i {
+  color: #6d0a51;
+}
+
+#home p {
+  line-height: 22.5px;
+  color: #ffffff;
+}
+
+.slider {
+  width: 1243px;
+  height: 427px;
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+}  
+  .slider::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  .slider::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 10px;
+  }
+  .slider::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+.slide {
+  width: 1243px;
+  margin-top: 75px;
+  text-align: center;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  scroll-behavior: smooth;
+}  
+
+.counter {
+  position: relative;
+  text-align: center;
+  bottom: 35%;
+}  
+
+.counter a {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  margin: 5px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 15px;
+  background-color: #89216B;
+  border-radius: 50%;
+  box-shadow: 10px 10px 10px #000;
+}
+
+.counter a:hover {
+  background-color: #cf505d;
+}
+
+
+/* Offerings */
+#offerings {
+  width: 1265px;
+  height: 400px;
+  background: #89216B;
+  background: -webkit-linear-gradient(to right, #DA4453, #89216B);
+  background: linear-gradient(to right, #DA4453, #89216B);
+  position: relative;
+  bottom: 35px;
+  right: 10px;
+}
+
+#offerings img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin: auto;
+  box-shadow: 10px 0 5px black;
+  padding: 10px;
+}
+
+#offerings h2 {
+  color: #ff0720;
+  padding: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 30px;
+}
+
+#offerings figcaption {
+  border-radius: 20%;
+  background-color: #dd0e23;
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  padding: 20px;
+  box-shadow: 5px 5px 10px black;
+}
+
+ .offerings-flex {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  bottom: 15px;
+}
+
+/* Application */
+#application {
+  background-color: #89216B;
+  padding: 20px;
+  position: relative;
+  bottom: 34.5px;
+  right: 8px;
+  height: 200px;
+  width: 1223px;
+}
+
+#application h2 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #ee7581;
+}
+
+#application p {
+  text-align: center;
+  line-height: 22.5px;
+  color: #fff;
+}
+
+#application a {
+  text-transform: capitalize;
+  text-decoration: none;
+  background-color: #ee7581;
+  color: white;
+  padding: 10px 60px;
+  text-align: center;
+  display: inline-block;
+  border: 2px solid white;
+  border-radius: 4%;
+  margin: 5px;
+}
+
+#application a:hover {
+  background: #DA4453;
+  background: -webkit-linear-gradient(to right, #DA4453, #89216B);
+  background: linear-gradient(to right, #DA4453, #89216B);
+  color: white;
+}
+
+.app-links {
+  position: relative;
+  width: 500px;
+  left: 32.5%;
+  top: 3px;
+}
+
+/* Testimonials */
+#testimonials {
+  background: #DA4453;
+  background: -webkit-linear-gradient(to left, #DA4453, #89216B);
+  background: linear-gradient(to left, #DA4453, #89216B);
+  position: relative;
+  bottom: 60px;
+  right: 8px;
+  width: 1263px;
+}
+
+#testimonials h2 {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px;
+  letter-spacing: 2px;
+  color: #6d0a51;
+}
+
+#testimonials img {
+  border: 10px solid white;
+  box-shadow: 10px 10px 15px black;
+  width: 200px;
+  height: auto;
+  border-radius: 100%;
+  text-align: center;
+  margin: 45px;
+}
+
+#testimonials blockquote {
+  text-align: center;
+  line-height: 22.5px;
+  color: #fff;
+}
+
+#testimonials figcaption {
+  text-align: center;
+  font-weight: bolder;
+  color: #6d0a51;
+}
+
+.test-slider {
+  width: 1263px;
+  height: 500px;
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+}  
+  .test-slider::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  .test-slider::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 10px;
+  }
+  .test-slider::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+ .test-slide {
+  width: 1263px;
+  margin-top: 10px;
+  text-align: center;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  scroll-behavior: smooth;
+}  
+
+.test-counter {
+  position: relative;
+  text-align: center;
+  bottom: 40%;
+}  
+
+.test-counter a {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  margin: 5px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 15px;
+  color: black;
+  background-color: #ee7581;
+  border-radius: 100%;
+  box-shadow: 10px 10px 10px black;
+}
+
+.test-counter a:hover {
+  background-color: #89216B;
+}
+
+/* Contact */
+#contact {
+  background-color: #DA4453;
+  position: relative;
+  bottom: 70px;
+  right: 8px;
+  width: 1263px;
+}
+
+#contact h2 {
+  color: #89216B;
+  text-align: center;
+  padding: 15px;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+#contact a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#contact a:hover {
+  color: #89216B;
+}
+
+.contact-paragraph {
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+
+.address {
+  color: white;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.address span {
+  margin-left: 10px;
+}
+
+.email {
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.email span {
+  margin-left: 10px;
+}
+
+.phone-number {
+  text-align: center;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.phone-number span {
+  margin-left: 10px;
+}
+
+.social-fb {
+  margin-left: 46%;
+}
+
+.social-fb, .social-tweet, .social-insta {
+  display: inline-block;
+  padding: 5px 5px 5px 5px;
+  background-color: linear-gradient(to right, #DA4453, #89216B);;
+  border-radius: 100%;
+  box-shadow: 5px 5px 5px black;
+}
+
+.fa-map-marker, .fa-envelope, .fa-phone {
+  color: #701456;
+  box-shadow: 5px 10px 10px black;
+}
+ 
+/* Media Queries for mobile view */
+@media only screen and (max-width: 720px) {
+  body, html {
+    height: 100%;
+  }
+  
+  /* Navbar */
+  #navbar {
+    display: none;
+  }
+
+  /* Header */
+  #header {
+    width: 104%;
+    height: 70px;
+  }
+
+  h1 {
+    font-size: 35px;
+    padding: 0px;
+    margin-bottom: 5px;
+  }
+
+  /* Home */
+  #home {
+    width: 99.4%;
+  }
+  
+  .slider {
+    width: 99.4%;
+  }  
+  
+  .slide {
+    width: 99.4%;
+    padding: 10px;
+  }  
+  
+  #home h2 {
+    font-size: 20px;
+  }
+
+  #home p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .counter {
+    bottom: 30%;
+  }  
+  
+  /* Testimonials */
+  #testimonials {
+    display: none;
+  }
+
+  /* Offerings */
+  #offerings {
+    width: 104%;
+    height: auto;
+  }
+  
+  #offerings h2 {
+    font-size: 25px;
+  }
+  
+   .offerings-flex {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    bottom: 15px;
+  }
+  
+  #offerings figcaption {
+    font-size: 17px;
+    padding: 10px;
+  }
+
+  #offerings img {
+    height: 140px;
+    width: 140px;
+  }
+
+  /* Application */
+  #application {
+    padding: 20px;
+    height: 320px;
+    width: 95%;
+  }
+  
+  #application h2 {
+    font-size: 25px;
+  }
+  
+  #application p {
+    font-size: 15px;
+    line-height: 22.5px;
+  }
+  
+  #application a {
+    padding: 10px 10px;
+    display: block;
+    margin: 15px;
+  }
+  
+  .app-links {
+    position: relative;
+    width: 300px;
+    left: 15%;
+  }
+
+  /* Contact */
+  #contact {
+    position: relative;
+    bottom: 45px;
+    width: 103.6%;
+    height: 400px;
+  }
+  
+   #contact h2 {
+    padding: 20px;
+    font-size: 25px;
+  }
+  
+   /* #contact a:hover {
+    color: white;
+  } */
+  
+  .contact-paragraph {
+    margin: -5px;
+    font-size: 15px;
+    line-height: 22.5px;
+  }
+  
+  .address {
+    font-size: 13px;
+    margin-top: 15px;
+  }
+  
+  .email {
+    font-size: 13px;
+    margin-top: 20px;
+  }
+  
+  .phone-number {
+    font-size: 13px;
+  }
+  
+  .social-span {
+    position: relative;
+    right: 35px;
+    top: 20px;
+  }
+}
+
+/* Media Queries for tab view */
+@media only screen and (min-width: 720px) and (max-width: 1024px) {
+/* Header*/ 
+h1 {
+  position: relative;
+  font-size: 40px;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+#header {
+  position: relative;
+  height: 100px;
+  width: 103%;
+  bottom: 10px;
+  right: 10px;
+}
+
+/* Navbar */
+.navbar {
+  display: none;
+}
+
+
+/* Home */
+ 
+#home {
+  width: 99.9%;
+}
+
+.slider {
+  width: 99.9%;
+}  
+  
+.slide {
+  width: 99.9%;
+  padding: 10px;
+}  
+
+.counter {
+  position: relative;
+  text-align: center;
+  bottom: 25%;
+}  
+
+#home h2 {
+  font-size: 30px;
+}
+
+#home p {
+  font-size: 15px;
+  line-height: 21px;
+}
+ /* Offerings  */
+#offerings {
+  width: 103%;
+  height: auto;
+}
+
+#offerings img {
+  height: 135px;
+  width: 135px;
+}
+
+#offerings figcaption {
+  padding: 15px;
+}
+
+ .offerings-flex {
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+} 
+
+/* Application */
+#application {
+  padding: 20px;
+  height: 250px;
+  width: 97%;
+}
+
+#application h2 {
+  font-size: 30px;
+}
+
+#application p {
+  font-size: 15px;
+  line-height: 22.5px;
+}
+
+#application a {
+  padding: 10px 60px;
+  margin: 5px;
+}
+
+.app-links {
+  position: relative;
+  width: 500px;
+  left: 20%;
+}
+
+/* Testimonials */ 
+#testimonials {
+  width: 102.7%;
+}
+
+#testimonials h2 {
+  font-size: 30px;
+}
+
+#testimonials img {
+  position: relative;
+  right: 15px;
+  width: 150px;
+  height: auto;
+  
+}
+
+#testimonials blockquote {
+  position: relative;
+  right: 5px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 22.5px;
+}
+
+#testimonials figcaption {
+  position: relative;
+  right: 5px;
+}
+
+.test-slider {
+  width: 102.7%;
+}  
+
+ .test-slide {
+  width: 102.7%;
+}  
+
+.test-counter {
+  position: relative;
+  text-align: center;
+  bottom: 40%;
+}  
+
+/* Contact */
+#contact {
+  position: relative;
+  bottom: 70px;
+  width: 102.7%;
+  height: 400px;
+}
+
+ #contact h2 {
+  padding: 20px;
+  font-size: 30px;
+}
+
+ /* #contact a:hover {
+  color: white;
+} */
+
+.contact-paragraph {
+  margin: -5px;
+  font-size: 15px;
+  line-height: 22.5px;
+}
+
+.address {
+  font-size: 13px;
+  margin-top: 15px;
+}
+
+.email {
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+.phone-number {
+  font-size: 13px;
+}
+
+.social-span {
+  position: relative;
+  right: 30px;
+  top: 20px;
+}
+
 }
